@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Inconsolata:wght@200;500&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Inconsolata:wght@200;500&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lobster&family=Shadows+Into+Light&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+header {
+    height: 100vh;
+    background: linear-gradient(to right, #008000, #228B22, #006400);
+    margin-bottom: 0px;
+}
+nav {
+    margin-left: 40%;
+}
+nav li {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    list-style: none;
+    font-family: sans-serif;
+    color: #fff;
+    margin-top: 20px;;
+}
+.hero-text-box {
+    position: absolute;
+    width: 1000px;
+    top: 50%;
+    left: 40%;
+    transform: translate(-65% , -50%);
+    color: #e5e5e5;
+    margin-left: 35%;
+}
+.bigname-text {
+    font-size: 80px;
+    font-family: 'Redressed', cursive;
+}
+.smallname-text {
+    font-family: 'Inconsolata', monospace;
+}
+.animation-area {
+	width: 100%;
+	height: 100vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 35px;
+	color: #fff;
+	font-size: 40px;
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+	font-family: monospace;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+.types{
+    background-color: #fff;
+    color: #000;
+    height: 140vh;
+    font-family: 'Shadows Into Light', cursive;
+}
+.heading{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 60px;
+    font-family: 'Shadows Into Light', cursive;
+}
+.image-big{
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.on-image{
+    position: absolute;
+    top: 20%;
+    width: 100;
+    margin-left: 20px;
+    color: #fff;
+}
+.people{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+.button{
+    border-radius: 10px;
+    background: linear-gradient(to right, #008000, #228B22, #006400);
+    width: 95%;
+}
+.button-href{
+    color: #fff;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+.animal{
+    width: 400px;
+    margin-bottom: 0;
+    margin-left: 115%;
+}
+.men-products{
+    background: #f4f4f4;
+    height: 100vh;
+    font-family: 'Shadows Into Light', cursive;
+}
+.products{
+    background: #fff;
+    height: 100vh;
+    font-family: 'Shadows Into Light', cursive;
+}
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(10px);
+}
+
+.image__overlay--primary {
+    background: linear-gradient(to right, #008000, #228B22, #006400);
+    border-radius: 10px;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
+}
+.image__title:hover{
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    font-family: 'Shadows Into Light', cursive;
+}
+.animal-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    background: linear-gradient(to right, #008000, #228B22, #006400);
+}
+.product-card{
+    margin-left: 30px;
+}
+.product-image{
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  /*===== Colores =====*/
+  --first-color: #228B22;
+  --white-color: #E9EAEC;
+  --dark-color: #000;
+  --dark-color-lighten: #F2F5FF;
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+}
+
+/*===== BASE =====*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*===== CARD =====*/
+.container {
+  height: 100vh;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 320px;
+  height: 400px;
+  background-color: var(--dark-color);
+  border-radius: 1rem;
+  padding: 4rem 2rem 0;
+  color: var(--white-color);
+  overflow-y: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card__img {
+    position: absolute;
+    width: 260px;
+    filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
+  }
+  
+  .card__data {
+    transform: translateY(13.2rem);
+    text-align: center;
+  }
+  
+  .card__title {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: .5rem;
+  }
+  
+  .card__preci {
+    display: inline-block;
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+  }
+  
+  .card__description {
+    font-size: var(--small-font-size);
+    text-align: initial;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+  }
+  
+  .card__button {
+    display: block;
+    width: max-content;
+    padding: 1.125rem 2rem;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: .2s;
+    opacity: 0;
+  }
+  
+  .card__button:hover {
+    box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
+  }
+  
+  .card__img, 
+  .card__data, 
+  .card__title, 
+  .card__preci, 
+  .card__description {
+    transition: .5s;
+  }
+  
+  /* Hover card effect */
+  .card:hover .card__img {
+    transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+  }
+  
+  .card:hover .card__data {
+    transform: translateY(4.8rem);
+  }
+  
+  .card:hover .card__title {
+    transform: translateX(-2.3rem);
+    margin-bottom: 0;
+  }
+  
+  .card:hover .card__preci {
+    transform: translateX(-6.8rem);
+  }
+  
+  .card:hover .card__description, 
+  .card:hover .card__button {
+    transition-delay: .2s;
+    opacity: 1;
+}
+.image{
+    width: 100px;
+    margin-left: 100px;
+}
+footer{
+    background: linear-gradient(to right, #008000, #228B22, #006400);
+    height: 40vh;
+}
+.social-media{
+    margin-left: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #fff;
+
+}
+.social-media li{
+  list-style-type: none;
+  font-size: 20px;
+}
+.logo{
+  width: 120px;
+  border-radius: 50px;
+}
